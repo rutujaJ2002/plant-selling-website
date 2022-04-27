@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Raleway&family=Rubik&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+:root{
+    --green:#3A9943;
+}
+
+*::selection{
+    background: var(--green);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    font-size: 3rem;
+    color: #444;
+    padding-left: 1rem;
+    border-left: .4rem solid var(--green);
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background: var(--green);
+    color: white;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: black;
+}
+
+.header-1,
+.header-2,
+.header-3{
+    display: flex;
+    align-items: center;
+    padding: 2rem 9%;
+    justify-content: space-between;
+    background: var(--green);
+}
+
+.header-1{
+    border-bottom: .1rem solid rgba(255,255,255,.2);
+}
+
+.header-3{
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: relative;
+    z-index: 10000;
+}
+
+.header-1 span{
+    font-weight:lighter;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.header-1 a{
+    padding: 0 .7rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.header-1 a:hover{
+    color: yellow;
+}
+
+.header-2 .logo{
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.header-2 .logo i{
+    color: yellow;
+    padding-right: .5rem;
+}
+
+.header-2 .search-bar{
+    display: flex;
+    align-items: center;
+    width: 50rem;
+    padding: 1.5rem;
+    background: rgba(255,255,255,.2);
+    border-radius: .5rem;
+}
+
+.header-2 .search-bar #search-bar{
+    width: 100%;
+    background: none;
+    text-transform: none;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.header-2 .search-bar #search-bar::placeholder{
+    text-transform: capitalize;
+    color: #ddd;
+}
+
+.header-2 .search-bar label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0 .5rem;
+}
+
+.header-2 .search-bar label:hover{
+    color: yellow;
+}
+
+.header-2 .icons a{
+    color:#fff;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header-2 a:hover{
+    color: yellow;
+}
+
+.header-3 .navbar a{
+    color:#333;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+.header-3 .icons a{
+    color:#333;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header-3 a:hover{
+    color: var(--green);
+}
+
+#menu-btn{
+    font-size: 3rem;
+    color: #666;
+    border: .1rem solid #666;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.header-3.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.container{
+
+	max-width: 1200px;
+
+	margin: 0 auto;
+
+}
+
+.cart{
+
+	display: flex;
+
+}
+
+.products{
+
+	flex: 0.75;
+
+}
+
+.product{
+
+	display: flex;
+
+	width: 100%;
+
+	height: 200px;
+
+	overflow: hidden;
+
+	border: 1px solid silver;
+
+	margin-bottom: 20px;
+
+}
+
+.heading{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product:hover{
+
+	border: none;
+
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+
+	transform: scale(1.01);
+
+}
+
+.product > img{
+
+	width: 300px;
+
+	height: 200px;
+
+	object-fit: cover;
+
+}
+
+.product > img:hover{
+
+	transform: scale(1.04);
+
+}
+
+.product-info{
+
+	padding: 20px;
+
+	width: 100%;
+
+	position: relative;
+
+}
+
+.product-name{
+	margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.product .price{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--green);
+}
+
+.product .price span{
+    -webkit-flow-into: 1.5rem;
+    font-weight: normal;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.product .quantity{
+    padding: 1rem 0;
+}
+
+.product .quantity span{
+    font-size: 2rem;
+}
+
+.product .quantity input{
+    font-size: 2rem;
+    padding: .6rem 0;
+    text-align: center;
+    background: rgba(0,0,0,.1);
+}
+
+.product-remove{
+
+	position: absolute;
+	bottom: 2rem;
+    font-size: 1.7rem;
+	right: 2rem;
+	padding:1rem 2.5rem;
+	background-color: var(--green);
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.product-remove:hover{
+    color: #fff;
+    background: black;
+}
+
+.product-quantity > input{
+
+	width: 40px;
+
+	padding: 5px;
+
+	text-align: center;
+
+}
+
+.fa{
+
+	margin-right: 5px;
+
+}
+
+.cart-total{
+	flex: 0.25;
+	margin-left: 20px;
+	padding: 20px;
+	height: 240px;
+	border: 1px solid silver;
+	border-radius: 5px;
+}
+
+.cart-total p{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	font-size:2rem;
+}
+
+.cart-total .ct{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cart-total a{
+	display: block;
+	text-align: center;
+	height: 4rem;
+	line-height: 4rem;
+	background-color: tomato;
+	color: white;
+	text-decoration: none;
+    font-size: 2.3rem;
+}
+
+.cart-total a:hover{
+
+	background-color: red;
+
+}
+
+
+@media screen and (max-width: 700px){
+
+	.remove{
+
+		display: none;
+
+	}
+
+	.product{
+
+		height: 150px;
+
+	}
+
+	.product > img{
+
+		height: 150px;
+
+		width: 200px;
+
+	}
+
+	.product-name, .product-price, .product-offer{
+
+		margin-bottom: 10px;
+
+	}
+
+}
+
+@media screen and (max-width: 900px){
+
+	.cart{
+
+		flex-direction: column;
+
+	}
+
+	.cart-total{
+
+		margin-left: 0;
+
+		margin-bottom: 20px;
+
+	}
+
+}
+
+@media screen and (max-width: 1220px){
+
+	.container{
+
+		max-width: 95%;
+
+	}
+
+}
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:991px){
+
+    .header-1,
+    .header-2,
+    .header-3{
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+    #menu-btn{
+        display:initial ;
+    }
+
+    .header-3 .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0,0,0,.3);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header-3 .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .header-3 .navbar a{
+        display: block;
+        margin: 1.5rem 0;
+        padding: 1.5rem;
+        border-bottom: .1rem solid rgba(0,0,0,.1);
+        border-radius: 1.2rem;
+        background: #fff;
+    }
+
+    .header-2{
+        flex-flow: column;
+    }
+
+    .header-2 .search-bar{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .header-3.active{
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+
+    .header-1{
+        display: none;
+    }    
+}

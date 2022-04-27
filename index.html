@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online plant selling website</title>
+
+    <!--cutsom style file link-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--font-awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--swiper js cdn link-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    
+    <!--header section-->
+    <div class="header-1">
+        <div class="share">
+            <span>Follow us :</span>
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+        <div class="call">
+            <span>call us :</span>
+            <a href="#">+123-456-7890</a>
+        </div>
+    </div>
+
+    <div class="header-2">
+        <a href="#" class="logo">
+            <i class="fas fa-seedling"></i>Logo
+        </a>
+
+        <form action="#" class="search-bar">
+            <input type="search" id="search-bar" placeholder="Search Here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </div>
+
+    <div class="header-3">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#category">category</a>
+            <a href="#product">product</a>
+            <a href="#deal">deal</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="/cart.html" class="fas fa-shopping-cart"></a>
+            <a href="/wishlist.html" class="fas fa-heart"></a>
+            <a href="/login.html" class="fas fa-user-circle"></a>
+        </div>
+    </div>
+
+
+    <!--home section starts-->
+    <section class="home" id="home">
+        <div class="swiper-container home-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(images/slider1.jpg);">
+                        <div class="content">
+                            <span>Upto 75% off</span>
+                            <h3>plant big sale special offer</h3>
+                            <a href="#" class="btn">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(images/slider2.jpg);">
+                        <div class="content">
+                            <span>Upto 45% off</span>
+                            <h3>Plant makes people happy</h3>
+                            <a href="#" class="btn">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(images/slider3.jpg);">
+                        <div class="content">
+                            <span>Upto 65% off</span>
+                            <h3>Decorate your garden now</h3>
+                            <a href="#" class="btn">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <!--banner section starts-->
+    <section class="banner-container">
+        <div class="banner">
+            <img src="images/banner1.jpg" alt="">
+            <div class="content">
+                <span>new arrivals</span>
+                <h3>house plants</h3>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="images/banner2.jpg" alt="">
+            <div class="content">
+                <span>new arrivals</span>
+                <h3>Office plants</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--category section starts-->
+    <section class="category" id="category">
+        <h1 class="heading">
+            shop by category
+        </h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/cat1.jpg" alt="">
+                <div class="content">
+                    <h3>bonsai</h3>
+                    <a href="/bonsai.html" class="btn">Shop now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/cat2.jpg" alt="">
+                <div class="content">
+                    <h3>plants for house</h3>
+                    <a href="#" class="btn">Shop now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/cat3.jpg" alt="">
+                <div class="content">
+                    <h3>plants for Office</h3>
+                    <a href="#" class="btn">Shop now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/cat4.jpg" alt="">
+                <div class="content">
+                    <h3>gift plants</h3>
+                    <a href="#" class="btn">Shop now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--product section starts-->
+    <section class="product" id="product">
+        <h1 class="heading">
+            new products
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <span class="discount">10% off</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                </div>
+                <img src="images/product1.jpg" alt="">
+                <h3>latest plants</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>quantity: </span>
+                    <input type="number" name="" min="1" max="100" value="1">
+                </div>
+                <div class="price">
+                    $9.79 
+                    <span>$11.75</span>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">25% off</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                </div>
+                <img src="images/product2.jpg" alt="">
+                <h3>latest plants</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>quantity: </span>
+                    <input type="number" name="" min="1" max="100" value="1">
+                </div>
+                <div class="price">
+                    $12.90 
+                    <span>$15.85</span>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">7% off</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                </div>
+                <img src="images/product3.jpg" alt="">
+                <h3>latest plants</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>quantity: </span>
+                    <input type="number" name="" min="1" max="100" value="1">
+                </div>
+                <div class="price">
+                    $13.45 
+                    <span>$14.75</span>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">15% off</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                </div>
+                <img src="images/product4.jpg" alt="">
+                <h3>latest plants</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>quantity: </span>
+                    <input type="number" name="" min="1" max="100" value="1">
+                </div>
+                <div class="price">
+                    $10.00 
+                    <span>$11.50</span>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">10% off</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                </div>
+                <img src="images/product5.jpg" alt="">
+                <h3>latest plants</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>quantity: </span>
+                    <input type="number" name="" min="1" max="100" value="1">
+                </div>
+                <div class="price">
+                    $12.00 
+                    <span>$13.20</span>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <span class="discount">30% off</span>
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-share"></a>
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                </div>
+                <img src="images/product1.jpg" alt="">
+                <h3>latest plants</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="quantity">
+                    <span>quantity: </span>
+                    <input type="number" name="" min="1" max="100" value="1">
+                </div>
+                <div class="price">
+                    $20.00 
+                    <span>$27.25</span>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--icons section starts-->
+    <section class="icons-container" >
+        <div class="icon">
+            <img src="images/icon1.png" alt="">
+            <div class="content">
+                <h3>free shipping</h3>
+                <p>free shipping on order</p>
+            </div>
+        </div>
+
+        <div class="icon">
+            <img src="images/icon2.png" alt="">
+            <div class="content">
+                <h3>100% money back</h3>
+                <p>30 days return back gaurantee</p>
+            </div>
+        </div>
+
+        <div class="icon">
+            <img src="images/icon3.png" alt="">
+            <div class="content">
+                <h3>secure payment</h3>
+                <p>100% secure payment</p>
+            </div>
+        </div>
+
+        <div class="icon">
+            <img src="images/icon4.png" alt="">
+            <div class="content">
+                <h3>24/7 support</h3>
+                <p>contact us anytime</p>
+            </div>
+        </div>
+    </section>
+
+    <!--deal section-->
+    <section class="deal" id="deal">
+        <h1 class="heading">
+            deal of the day
+        </h1>
+
+        <div class="row">
+            <div class="content">
+                <h3 class="title">Don't miss the deal</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Mollitia quidem illum quisquam ipsam provident corporis 
+                    assumenda? Quasi eligendi pariatur aliquid nostrum, quibusdam
+                     quod reprehenderit. Debitis repellat pariatur, beatae cum 
+                     expedita tenetur quisquam ratione amet nisi?</p>
+                     <div class="counter">
+                         <div class="box">
+                             <h3 id="day">00</h3>
+                             <span>day</span>
+                         </div>
+
+                         <div class="box">
+                            <h3 id="hour">00</h3>
+                            <span>hour</span>
+                        </div>
+
+                        <div class="box">
+                            <h3 id="minute">00</h3>
+                            <span>minute</span>
+                        </div>
+
+                        <div class="box">
+                            <h3 id="second">00</h3>
+                            <span>second</span>
+                        </div>
+                     </div>
+                     <a href="#" class="btn">check out the deal</a>
+            </div>
+
+            <div class="image">
+                <img src="images/deal-img.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!--contact section-->
+    <scetion class="contact" id="contact">
+        <h1 class="heading">
+            get in touch
+        </h1>
+        <div class="row">
+            <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1ZdmXqwEmrVOw4_5p3fu71_DKwpE&ehbc=2E312F" allowfullscreen="" loading="lazy"></iframe>
+
+            <form method="POST">
+                <div class="inputBox">
+                    <input type="text" name="name" required>
+                    <label>Name:</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="email" name="email" required>
+                    <label>Email:</label>
+                </div>
+
+                <div class="inputBox">
+                    <input type="number" name="number" required>
+                    <label>Number:</label>
+                </div>
+
+                <div class="inputBox">
+                    <textarea required name="msg" id="" cols="30" rows="10"></textarea>
+                    <label>Message:</label>
+                </div>
+
+                <input type="submit" value="Send Message" name="send" class="btn">
+            </form>
+        </div>
+    </scetion>
+
+    <!--footer section-->
+    <footer class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  itaque aut qui nam quibusdam exercitationem soluta fugit, reprehenderit sed.</p>
+            </div>
+
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">India</a>
+                <a href="#">USA</a>
+                <a href="#">Japan</a>
+                <a href="#">France</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="#product">product</a>
+                <a href="#category">category</a>
+                <a href="#deal">deal</a>
+                <a href="#contact">contact</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Linkedin</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--custom js file link-->
+    <script src="/js/script.js"></script>
+
+    <!--swiper js cdn link-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper= new Swiper(".home-slider",{
+            pagination:{
+                el:".swiper-pagination",
+                clickable:true,
+            },
+            autoplay:{
+                delay:3000,
+                disableOnInteraction:false,
+            },
+            loop:true,
+        });
+    </script>
+</body>
+</html>
